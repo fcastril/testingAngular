@@ -40,7 +40,20 @@ export class AppComponent {
     this.form.controls['municipio'].setValue('');
     this.form.controls['concatenar'].setValue('');
   }
+
+
   setTexto(municipio: string, contatenar:string): string {
     return `${municipio} ${contatenar}`;
   }
+
+  setCalcularSuma(numero1: number, numero2: number) {
+    if (numero1 > numero2){
+      return numero1*numero2;
+    }
+    else {
+      return numero1 + numero2;
+    }
+  }
+
+
 }
